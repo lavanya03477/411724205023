@@ -1,0 +1,122 @@
+/* p{
+    font-size:xx-larger;
+    font-weight:bolder;
+} */
+h1{
+    padding: 20px;
+    border: 20px solid green;
+    margin: 20px;
+}
+video{
+    height:auto;
+    width: 100%;
+}
+.imgvideo{
+    background-color:chocolate;
+}
+#p1{
+    font-weight: 600;
+    font-style: italic;
+}
+#p2{
+    font-style: italic;
+}
+ol{
+    list-style-type: upper-roman;
+}
+ul{
+    list-style-type:square;
+}
+table,td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    background-color: aliceblue;
+}
+td{
+    background-color:burlywood;
+}
+button{
+    background-color:chartreuse;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px;
+}
+button:hover{
+    background-color: crimson;
+}
+h1:hover{
+    color:red;
+}
+form{
+    height: 500px;
+    width:50%;
+    background-color: khaki;
+    padding: 50px;
+    border-radius: 100px;
+}
+#one{
+    /* grid-row:1/2; */
+    background-color: aqua;
+}
+#two{
+    /* grid-row:1/2; */
+    background-color: blanchedalmond;
+}
+#three{
+    /* grid-row:1/2; */
+    background-color: blueviolet;
+}
+#four{
+    /* grid-row:2/3; */
+    background-color: cadetblue;
+}
+#five{
+    /* grid-row:2/3; */
+    background-color: cornsilk;
+}
+#six{
+    /* grid-row:2/3; */
+    background-color: grey;
+}
+.festivals{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+img{
+    height:500px;
+    width:500px;
+    background-color: rgb(15, 0, 128);
+    padding: 100px;
+    /* border-radius: 500px; */
+} 
+/* @media(max-width:600px){
+    img{
+        height:auto;
+        width: 100%;
+    }
+} */
+ nav{
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px;    */
+}
+.grid{
+    display: grid;
+    /* width:100%;
+    grid-template-columns: 33% 33% 33%; */
+}
+ /* Desktop */
+@media(min-width:1024px){
+    nav{
+        display:flex;
+        flex-direction: row;
+        gap:50px;
+    }
+    .grid{
+        display:grid;
+        width:100%;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
