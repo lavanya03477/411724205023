@@ -1,0 +1,88 @@
+nav{
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+@media(min-width:1024px){ 
+nav{
+ display: flex;
+ flex-direction: row;
+}
+}
+img{
+ height: 500px;
+ width: 500px;
+ border-radius: 50px;
+}
+video{
+    height: auto;
+    width: 50%;
+}
+button{
+    border-radius: none;
+    padding: 5px;
+    margin: 20px;
+}
+button:hover{
+    background-color:chartreuse;
+}
+.videobutton{
+    background-color: blue;
+    padding: 5px;
+}
+#one{
+background-color: darkkhaki;
+}
+#two{
+    background-color:hotpink;
+}
+#three{
+    background-color: indianred;
+}
+#four{
+    background-color: blueviolet;
+}
+#five{
+    background-color: burlywood;
+}
+#six{
+    background-color: cornflowerblue;
+}
+#seven{
+    background-color: lightblue;
+}
+#eight{
+    background-color: lavenderblush;
+}
+.grid{
+   display: grid;
+   width: 100%;
+   grid-template-columns: 50% 50%;
+}
+@media(min-width:1024px){
+.grid{
+   display: grid;
+   width: 100%;
+   grid-template-columns: 25% 25% 25% 25%;
+}
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td{
+    border: 1px solid black;
+}
+
+th{
+    background-color: lightblue;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+}
