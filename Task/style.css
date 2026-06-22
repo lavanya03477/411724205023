@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#status {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-card {
+  margin: auto;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  text-align: left;
+}
+
