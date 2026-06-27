@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    text-align: center; 
+    background-image: url("image4.png");
+    background-size:cover;
+     height: 100vh;
+    background-position: center; 
+    background-repeat: no-repeat;     
+    color: #000; 
+}
+
+input {
+    padding: 8px;
+    width: 250px;
+}
+
+button {
+    background-color: rgb(100, 121, 224);
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#messages div {
+    background-color: rgb(224, 107, 49);
+    padding: 10px;
+    margin: 8px auto; 
+    border-radius: 5px;
+    width: 300px; 
+    text-align: left; 
+}
+
+#status {
+    margin-top: 15px;
+    font-weight: bold;
+}
