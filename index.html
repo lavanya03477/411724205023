@@ -1,133 +1,25 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport"
-        content="width=device-width,
-        initial-scale=1.0">
-        <title> my first website</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="style.css">
-        <!-- <style>
-            body{
-                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            }
-        </style> -->
-    </head>
-    <body>
- <p id="p1">This is my first class</p>
- <p id="p2">This is my second class</p>
- <h1>Heading 1</h1>
- <h2>heading 2</h2>
- <h3>heading 3</h3>
- <h4>heading 4</h4>
- <h5>heading 5</h5>
- <h6>heading 6</h6>
- <div class="imgvideo">
- <img src="img.png">
- </div>
- <div class="imgvideo">
- <video controls>
-    <source src="video.mp4"type="video/mp4"></source>
- </video>
- </div>
- <ol><li>1st point</li>
-<li>2nd point</li>
-</ol>
-<ul><li>1st point</li>
-<li>2nd point</li>
-</ul>
-<table>
-    <tr>
-        <th>1</th>
-        <th>2</th>
-    </tr>
-    <tr>
-        <td>1st row 1st col</td>
-        <td>1st row 2nd col</td>
-    </tr>
-    <tr><td>2nd row 1st col</td>
-        <td>2nd row 2nd col</td></tr>
-</table>
-<header></header>
-<footer></footer>
-<nav>
-    <a href="https://google.com">Google</a>
-    <a href="https://amazon.com">Amazon</a>
-    <a>Events</a>
-    <a>Contact</a>
-</nav>
-<form>
-    <label>Email:</label>
-    <input type="email"><br>
-    <label>Password:</label>
-    <input type="password"><br>
-    <label>Gender:</label>
-    <input type="radio" name="gender">Male<br>
-    <input type="radio" name="gender">Female<br>
-    <label>Hobbies:</label>
-    <input type="checkbox" name="Hobbies">Basketball<br>
-    <input type="checkbox" name="Hobbies">Singing<br>
-    <label>Event type:</label>
-    <select>
-        <option>Festival</option>
-        <option>Birthday</option>
-        <option>Other</option>
-    </select><br>
-    <label>Address:</label>
-    <textarea rows="4" cols="3">Textarea</textarea><br>
-    <button>Submit</button>
-</form>
-<div class="grid">
-    <div id="one">1</div>
-    <div id="two">2</div>
-    <div id="three">3</div>
-    <div id="four">4</div>
-    <div id="five">5</div>
-    <div id="six">6</div>
-    </div>
-    <div class="festivals">
-        <div id="festivals1">
-            <img src="image1.png">
-        </div>
-        <div id="festivals2"><img src="image2.png">
-        </div>
-        <div id="festivals3"><img src="image3.png">
-        </div>
-        <div id="festivals4"><img src="image4.png">
-        </div>
-    </div>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <div class="container text-center">
-  <div class="row justify-content-md-center">
-    <div class="col col-lg-2">
-      1 of 3
-    </div>
-    <div class="col-md-auto">
-      Variable width content
-    </div>
-    <div class="col col-lg-2">
-      3 of 3
-    </div>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Note App (CRUD)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Task: Note App (CRUD Operation)</h2>
+
+    <!-- Create -->
+    <input type="text" id="noteInput" placeholder="Today is CRUD operation">
+    <button onclick="addNote()">Submit</button>
+
+    <!-- Display Button -->
+    <button id="displayBtn" onclick="renderNotes()">Display</button>
+
+    <!-- Notes Section -->
+    <div id="notes"></div>
   </div>
-  <div class="row">
-    <div class="col">
-      1 of 3
-    </div>
-    <div class="col-md-auto">
-      Variable width content
-    </div>
-    <div class="col col-lg-2">
-      3 of 3
-    </div>
-  </div>
-</div>
-<div class="card" style="width: 18rem;">
-  <img src="image1.png" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+
+  <script src="script.js"></script>
 </body>
 </html>

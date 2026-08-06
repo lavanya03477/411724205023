@@ -1,32 +1,45 @@
-console.log("Hello")
-const first=1;
-const second=2;
-console.log(first);
-const str="Lavanya"
-console.log(str);
-const fruits=["Apple","Banana","Orange"]
-console.log(fruits[0])
-fruits[1]="Orange"
-console.log(fruits[1])
-const arr=[1,"name",false,2.4]
-console.log(arr)
-for(let i=0;i<arr.length;i++){
-    console.log(arr[i]);
-}
-const fourth=document.getElementById("ptag");
-fourth.innerHTML="This is my fourth class"
-function newFunction(){
-    console.log("Iam writing javascript")
-}
-//input
-const input = document.getElementById("eventListener")
-const output=document.getElementById("Ptag")
-input.addEventListener("input", ()=>{
-    output.textContent=input.value
-})
-//creation
-const newvar = document.createElement("h1")
-newvar.textContent="New Paragraph"
-document.body.appendChild(newvar)
+let notes = [];
 
-newvar.remove()
+// CREATE
+function addNote() {
+  const input = document.getElementById('noteInput');
+  const noteText = input.value.trim();
+  if (noteText) {
+    const note = { id: Date.now(), text: noteText };
+    notes.push(note);
+    input.value = "";
+  }
+}
+
+// READ (triggered by Display button)
+function renderNotes() {
+  const notesDiv = document.getElementById('notes');
+  notesDiv.innerHTML = ""; // clear previous
+  notes.forEach(note => {
+    const noteDiv = document.createElement('div');
+    noteDiv.className = "note";
+    noteDiv.innerHTML = `
+      ${note.text}
+      <button onclick="updateNote(${note.id})">Update</button>
+      <button onclick="deleteNote(${note.id})">Delete</button>
+    `;
+    notesDiv.appendChild(noteDiv);
+  });
+}
+
+// UPDATE
+function updateNote(id) {
+  const newText = prompt("Edit your note:");
+  if (newText) {
+    const note = notes.find(n => n.id === id);
+    if (note) note.text = newText;
+    renderNotes();
+  }
+}
+
+// DELETE
+function deleteNote(id) {
+  notes = notes.filter(n => n.id !== id);
+  renderNotes();
+}
+
